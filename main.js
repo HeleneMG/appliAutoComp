@@ -1,9 +1,6 @@
 //https://places-dsn.algolia.net/1/places/query ==> requete POST
 //http://www.omdbapi.com/?s=harry+potter&&apikey=adf1f2d7 ==> requete GET
 
-
-
-
 const algoliaSearch = () => {
     const URL = "https://places-dsn.algolia.net/1/places/query";
     fetch(URL, {
