@@ -1,6 +1,10 @@
 //https://places-dsn.algolia.net/1/places/query ==> requete POST
 //http://www.omdbapi.com/?s=harry+potter&&apikey=adf1f2d7 ==> requete GET
 
+const autocompleteList = document.querySelector('#autocomplete-list');
+const userInput = document.querySelector('#userInput');
+userInput.addEventListener('keyup', algoliaSearch);
+
 const algoliaSearch = () => {
     const URL = "https://places-dsn.algolia.net/1/places/query";
     fetch(URL, {
@@ -28,8 +32,14 @@ const algoliaSearch = () => {
         });
 };
 
-const autocompleteList = document.querySelector('#autocomplete-list');
 console.log(autocompleteList);
 //document.querySelector('#userInput').focus();
-const userInput = document.querySelector('#userInput');
-userInput.addEventListener('keyup', algoliaSearch);
+
+//evenement au click sur item liste
+//selection userinput
+//afficher item dans unserInput
+//effacer liste
+
+item.addEventListener('click',()=>{
+    userInput.innerHTML
+});
